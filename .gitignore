@@ -3,3 +3,4 @@
 style-guide-template/.cache
 style-guide-template/*.css
 style-guide-template/build
+.vscode/settings.json
