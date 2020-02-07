@@ -64,6 +64,7 @@ header {
 		display: block;
 		top: 50%;
 		left: 50%;
+        height: 75%;
 		@include transform(translateX(-50%) translateY(-50%));
 	}
 
@@ -358,7 +359,7 @@ section {
 
 	img {
 		display: block;
-		width: 100%;
+		width: 50%;
 	}
 
 	ul:last-of-type {

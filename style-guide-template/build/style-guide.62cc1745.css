@@ -498,6 +498,7 @@ header nav {
   display: block;
   top: 50%;
   left: 50%;
+  height: 75%;
   -webkit-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
   -ms-transform: translateX(-50%) translateY(-50%);
@@ -818,7 +819,7 @@ section:nth-of-type(10) h2::before {
 }
 .cd-branding img {
   display: block;
-  width: 100%;
+  width: 50%;
 }
 .cd-branding ul:last-of-type {
   padding-top: 0.6em;
