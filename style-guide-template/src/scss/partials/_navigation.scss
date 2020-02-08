@@ -85,3 +85,26 @@ header {
     }
   }
 }
+
+.cd-navigation  {
+  ul li {
+    font-weight: 800;
+
+    a {
+      color: pink;
+    }
+  }
+
+  h3  {
+    color: green;
+    font-weight: 900;
+  }
+}
+
+.cd-primary-nav  {
+  background: red;
+}
+
+.cd-secondary-nav  {
+  background: yellow;
+}
