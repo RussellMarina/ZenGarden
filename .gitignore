@@ -3,5 +3,6 @@
 style-guide-template/.cache
 style-guide-template/*.css
 style-guide-template/build
+style-guide-template/node_modules
 .vscode/settings.json
 style-guide-template/.DS_Store
