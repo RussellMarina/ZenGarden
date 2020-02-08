@@ -49,6 +49,9 @@ p {
   a {
     color: $color-5; //changes link color in typography section
     text-decoration: none; //changed from underline
+      &:hover {
+          color: $color-2;
+      }
   }
 
   @include MQ(S) {

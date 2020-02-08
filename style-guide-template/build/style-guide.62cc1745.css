@@ -155,6 +155,49 @@ header {
   border-color: #f6e5a9;
 }
 
+.cd-navigation h3 {
+  color: black;
+}
+
+.cd-primary-nav {
+  background: #fec348;
+}
+.cd-primary-nav ul li {
+  font-weight: 800;
+}
+.cd-primary-nav a {
+  color: #ffffff;
+}
+.cd-primary-nav :hover {
+  color: #ce2027;
+}
+
+.cd-secondary-nav a {
+  color: #6cbc99;
+}
+.cd-secondary-nav :visited {
+  color: #c1db74;
+}
+.cd-secondary-nav :hover {
+  color: #fec348;
+}
+.cd-secondary-nav :active {
+  color: #f6e5a9;
+}
+
+.cd-other-nav a {
+  color: #ce2027;
+}
+.cd-other-nav :visited {
+  color: #c1db74;
+}
+.cd-other-nav :hover {
+  color: #fec348;
+}
+.cd-other-nav :active {
+  color: #f6e5a9;
+}
+
 /* -------------------------------- 
 
 xPage title 
@@ -223,6 +266,9 @@ p {
 p a {
   color: #ce2027;
   text-decoration: none;
+}
+p a:hover {
+  color: #fec348;
 }
 @media only screen and (min-width: 768px) {
   p {
