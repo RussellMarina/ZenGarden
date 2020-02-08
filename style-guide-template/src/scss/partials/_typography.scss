@@ -49,7 +49,8 @@ p {
   a {
     color: $color-5; //changes link color in typography section
     text-decoration: none; //changed from underline
-      &:hover {
+      
+    &:hover {
           color: $color-2;
       }
   }
