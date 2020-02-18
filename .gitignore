@@ -6,3 +6,5 @@ style-guide-template/node_modules/
 .vscode/settings.json
 style-guide-template/.DS_Store
 style-guide-template/package-lock.json
+style-guide-template/src/.DS_Store
+style-guide-template/src/index 2.html
