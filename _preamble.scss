@@ -1,4 +1,7 @@
 .preamble {
-	clear: right; 
-	padding: 0px 10px 0 10px;
-	}
+    border: 2px solid green;
+    background-color: $white;
+    background-image: url(images/tamales1.svg);
+    background-repeat: no-repeat;
+    padding: 1em;
+}

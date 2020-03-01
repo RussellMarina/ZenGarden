@@ -1,28 +1,14 @@
 header h1 { 
-	background: transparent url(http://csszengarden.com/001/h1.gif) no-repeat top left;
-	margin-top: 10px;
 	display: block;
-	width: 219px;
-	height: 87px;
-	float: left;
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
+    font-size: 3em;
+    color: $dark-teal;
+    font-family: $secondary-font;
 	}
 header h2 { 
-	background: transparent url(http://csszengarden.com/001/h2.gif) no-repeat top left; 
-	margin-top: 58px; 
-	margin-bottom: 40px; 
-	width: 200px; 
-	height: 18px; 
-	float: right;
+    font-family: $primary-font;
+    font-style: italic;
 
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
 	}
 header {
-	padding-top: 20px;
-	height: 87px;
+   
 }

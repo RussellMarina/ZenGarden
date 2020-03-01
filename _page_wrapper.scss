@@ -1,6 +1,18 @@
-.page-wrapper { 
-	background: url(http://csszengarden.com/001/zen-bg.jpg) no-repeat top left; 
-	padding: 0 175px 0 110px;  
-	margin: 0; 
-	position: relative;
-  }
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid $yellow;
+    margin: 2em;
+    padding: 2em;
+    min-width: 300px;
+
+}
+
+//@media screen and (min-width:900px) {
+//
+////.page-wrapper {
+////    display: flex;
+////    flex: row wrap;
+////    }
+////
+////}

@@ -1,27 +1,29 @@
 p { 
-	margin-top: 0; 
-	text-align: justify;
+	
 	}
+
 h3 { 
-	font: italic normal 1.4em georgia, sans-serif;
-	letter-spacing: 1px; 
-	margin-bottom: 0; 
-	color: #7D775C;
-	}
+	font-family: $secondary-font;
+    font-weight: bold;
+	color: $blue-green;
+    font-size: 1.5em;
+   	}
+
 a:link { 
 	font-weight: bold; 
 	text-decoration: none; 
-	color: #B7A5DF;
+	color: $gold;
 	}
 a:visited { 
 	font-weight: bold; 
 	text-decoration: none; 
-	color: #D4CDDC;
+	color: $lime;
 	}
 a:hover, a:focus, a:active { 
-	text-decoration: underline; 
-	color: #9685BA;
+	text-decoration: none; 
+	color: $lime;
 	}
 abbr {
 	border-bottom: none;
 	}
+
