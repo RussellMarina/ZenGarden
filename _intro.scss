@@ -2,7 +2,15 @@
     background-image: url(images/mariachi01.svg);
     background-repeat: no-repeat;
     background-color: $yellow;
+    background-size: 200px;
+    background-position: top;
     min-width: 300px;
     width: 100%;
-    
+
     }
+
+.intro h1, h2 {
+     text-align: center;
+}
+
+

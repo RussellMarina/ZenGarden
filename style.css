@@ -67,8 +67,14 @@ header h2 {
   background-image: url(images/mariachi01.svg);
   background-repeat: no-repeat;
   background-color: #FBD659;
+  background-size: 200px;
+  background-position: top;
   min-width: 300px;
   width: 100%;
+}
+
+.intro h1, h2 {
+  text-align: center;
 }
 
 header h1 {
@@ -92,6 +98,8 @@ header h2 {
   background-color: #ffffff;
   background-image: url(images/tamales1.svg);
   background-repeat: no-repeat;
+  background-size: 170px;
+  background-position: top;
   padding: 1em;
   margin: 1em;
 }
@@ -99,10 +107,12 @@ header h2 {
 .explanation {
   border: 2px solid pink;
   background-color: #ffffff;
+  padding: 1em;
   background-image: url(images/taco-01.svg);
   background-repeat: no-repeat;
+  background-size: 180px;
+  background-position: top;
   margin: 1em;
-  padding: 1em;
 }
 
 .participation {
@@ -110,6 +120,8 @@ header h2 {
   background-color: #ffffff;
   background-image: url(images/fajitas-01.svg);
   background-repeat: no-repeat;
+  background-size: 170px;
+  background-position: top;
   padding: 1em;
   margin: 1em;
 }
@@ -119,6 +131,8 @@ header h2 {
   background-color: #ffffff;
   background-image: url(images/quesadilla-01.svg);
   background-repeat: no-repeat;
+  background-size: 200px;
+  background-position: top;
   padding: 1em;
   margin: 1em;
 }
@@ -128,6 +142,8 @@ header h2 {
   background-color: #ffffff;
   background-image: url(images/rice-01.svg);
   background-repeat: no-repeat;
+  background-size: 170px;
+  background-position: top;
   padding: 1em;
   margin: 1em;
 }
