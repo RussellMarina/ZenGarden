@@ -1,14 +1,15 @@
-header h1 { 
-	display: block;
-    font-size: 3em;
-    color: $dark-teal;
-    font-family: $secondary-font;
-	}
-header h2 { 
-    font-family: $primary-font;
-    font-style: italic;
-
-	}
 header {
-   
+  background-color: transparent;
+  text-align: center;
+}
+
+header h1 { 
+  display: block;
+  font: 30% $secondary-font;
+  font-size: 2em;
+  color: $dark-teal;
+}
+
+header h2 {
+  font-style: italic;
 }

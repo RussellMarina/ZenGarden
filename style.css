@@ -9,16 +9,22 @@ html {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 75% "Montserrat", sans-serif;
+  line-height: 1.88889;
+  margin: 0;
+  padding: 0;
   color: #000;
   background-color: #f6e5a9;
 }
 
+p {
+  margin-top: 0;
+  text-align: justify;
+}
+
 h3 {
-  font-family: "Sigmar One", cursive;
-  font-weight: bold;
+  font: bold 1.7em "Sigmar One", cursive;
   color: #6cbc99;
-  font-size: 1.5em;
 }
 
 a:link {
@@ -42,15 +48,19 @@ abbr {
   border-bottom: none;
 }
 
+header {
+  background-color: transparent;
+  text-align: center;
+}
+
 header h1 {
   display: block;
-  font-size: 3em;
+  font: 30% "Sigmar One", cursive;
+  font-size: 2em;
   color: #204B4B;
-  font-family: "Sigmar One", cursive;
 }
 
 header h2 {
-  font-family: "Montserrat", sans-serif;
   font-style: italic;
 }
 
@@ -63,29 +73,37 @@ header h2 {
   min-width: 300px;
 }
 
+@media screen and (min-width: 900px) {
+  .page-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+}
 .intro {
-  background-image: url(images/mariachi01.svg);
-  background-repeat: no-repeat;
+  background: url(images/mariachi01.svg) top center no-repeat;
+  background-size: 50%;
   background-color: #FBD659;
-  background-size: 200px;
-  background-position: top;
-  min-width: 300px;
   width: 100%;
 }
 
-.intro h1, h2 {
+@media screen and (min-width: 900px) {
+  .intro {
+    min-width: 300px;
+  }
+}
+header {
+  background-color: transparent;
   text-align: center;
 }
 
 header h1 {
   display: block;
-  font-size: 3em;
+  font: 30% "Sigmar One", cursive;
+  font-size: 2em;
   color: #204B4B;
-  font-family: "Sigmar One", cursive;
 }
 
 header h2 {
-  font-family: "Montserrat", sans-serif;
   font-style: italic;
 }
 

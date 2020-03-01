@@ -1,29 +1,31 @@
 p { 
-	
-	}
+  margin-top: 0;
+  text-align: justify;
+}
 
 h3 { 
-	font-family: $secondary-font;
-    font-weight: bold;
-	color: $blue-green;
-    font-size: 1.5em;
-   	}
+  font: bold 1.7em $secondary-font;
+  color: $blue-green;
+}
 
 a:link { 
-	font-weight: bold; 
-	text-decoration: none; 
-	color: $gold;
-	}
+  font-weight: bold; 
+  text-decoration: none; 
+  color: $gold;
+}
+
 a:visited { 
-	font-weight: bold; 
-	text-decoration: none; 
-	color: $lime;
-	}
+  font-weight: bold; 
+  text-decoration: none; 
+  color: $lime;
+}
+
 a:hover, a:focus, a:active { 
-	text-decoration: none; 
-	color: $lime;
-	}
+  text-decoration: none; 
+  color: $lime;
+}
+
 abbr {
-	border-bottom: none;
-	}
+  border-bottom: none;
+}
 

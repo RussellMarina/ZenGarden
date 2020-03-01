@@ -1,16 +1,16 @@
 .intro {
-    background-image: url(images/mariachi01.svg);
-    background-repeat: no-repeat;
-    background-color: $yellow;
-    background-size: 200px;
-    background-position: top;
-    min-width: 300px;
-    width: 100%;
-
-    }
-
-.intro h1, h2 {
-     text-align: center;
+  background: url(images/mariachi01.svg) top center no-repeat;
+  background-size: 200px;
+  background-color: $yellow;
+  width: 100%;
 }
 
+.intro h1, h2 {
+  text-align: center;
+}
 
+@media screen and (min-width: 900px)  {
+  .intro  {
+    min-width: 300px;
+  }
+}
