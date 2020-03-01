@@ -1,10 +1,22 @@
 .preamble {
-    border: 2px solid green;
-    background-color: $white;
-    background-image: url(images/tamales1.svg);
-    background-repeat: no-repeat;
-    background-size: 170px;
-    background-position: top;
-    padding: 1em;
-    margin: 1em;
-    }
+  border: 2px solid green;
+  background-color: $white;
+  padding: 1em;
+  margin: 1em;
+  background: url(images/tamales1.svg) top center no-repeat;
+  background-size: 170px;
+}
+
+.preamble h3  {
+  height: 6em;
+  text-align: center;
+}
+
+.preamble p {
+  // background-color: $blue-green;
+  // padding: 1em;
+}
+
+@media screen and (min-width: $media-width) {
+
+}
