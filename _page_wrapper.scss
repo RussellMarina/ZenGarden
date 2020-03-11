@@ -1,16 +1,17 @@
 .page-wrapper {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
     border: 3px solid $yellow;
     margin: 2em;
     padding: 2em;
     min-width: 300px;
-
+    // @include borderline(2px);
 }
 
-@media screen and (min-width:900px) {
+@media screen and (min-width:$media-width) {
   .page-wrapper {
-    display: flex;
-    flex-flow: row nowrap;
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }

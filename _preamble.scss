@@ -1,20 +1,5 @@
 .preamble {
-  border: 2px solid green;
-  background-color: $white;
-  padding: 1em;
-  margin: 1em;
-  background: url(images/tamales1.svg) top center no-repeat;
-  background-size: 170px;
-}
-
-.preamble h3  {
-  height: 6em;
-  text-align: center;
-}
-
-.preamble p {
-  // background-color: $blue-green;
-  // padding: 1em;
+  @include regions("tamales1.svg", 1.1em, 170, 6.3);
 }
 
 @media screen and (min-width: $media-width) {

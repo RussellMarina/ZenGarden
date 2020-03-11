@@ -3,9 +3,14 @@ p {
   text-align: justify;
 }
 
+h1, h2, h3, h4, h5  {
+  padding: 0;
+  margin: 0;
+}
+
 h3 { 
   font: bold 1.7em $secondary-font;
-  color: $blue-green;
+  color: $teal;
 }
 
 a:link { 

@@ -1,0 +1,14 @@
+.requirements {
+  @include regions("rice-01.svg", 1.1em, 220, 4.5);
+}
+
+p[role="contentinfo"] {
+  background-color: $sand;
+  text-decoration: none;
+  color: $blue-green;
+  font-size: 1.2rem;
+  text-align: center;
+  a:link, a:active, a:visited {
+    color: $blue-green;
+  }
+}

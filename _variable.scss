@@ -10,7 +10,8 @@ $blue-green: #6cbc99;
 $red: #ce2027; 
 $white: #ffffff; 
 $brown: #6f5940; 
-$black: #000;
+$black: #000000;
+$teal: #389C9C;
 $dark-teal: #204B4B;
 
 // fonts
@@ -18,3 +19,63 @@ $primary-font: 'Montserrat', sans-serif;
 $secondary-font: 'Sigmar One', cursive;
 
 $media-width: 900px;
+$h-row-height: 300px;
+$h-num: 10;
+
+@mixin borderline($pixels: 1px ) {
+  $rn: random(10);
+  $color: red;
+
+  @if $rn == 1  {
+    $color: red;
+  }
+  @if $rn == 2  {
+    $color: darkmagenta;
+  }
+  @if $rn == 3  {
+    $color: navy;
+  }
+  @if $rn == 4  {
+    $color: brown;
+  }
+  @if $rn == 5  {
+    $color: darkred;
+  }
+  @if $rn == 6  {
+    $color: darkmagenta;
+  }
+  @if $rn == 7  {
+    $color: blue;
+  }
+  @if $rn == 8  {
+    $color: darkorange;
+  }
+  @if $rn == 9  {
+    $color: rebeccapurple;
+  }
+  @if $rn == 10  {
+    $color: deeppink;
+  }
+
+  border: $pixels solid $color;
+}
+
+@mixin regions($image, $font-size: 1em, $bg-size: 170, $bg-y: 5) {
+  padding: 1em;
+  margin: 1em 0;
+  background: url(images/#{$image}) no-repeat;
+  background-size: #{$bg-size}px;
+  background-position-x: center;
+  background-position-y: #{$bg-y}em;
+
+  h3  {
+    height: 11em;
+    text-align: center;
+    line-height: 1.5em;
+  }
+
+  p {
+    padding-bottom: 10px;
+    font-size: $font-size; //  change to desired size
+  }
+}

@@ -14,4 +14,5 @@ body {
   padding: 0;
   color: $black; 
   background-color: $sand;
+  @include borderline(3px);
 }

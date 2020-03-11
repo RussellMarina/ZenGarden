@@ -1,49 +1,15 @@
 .supporting {	
+
 }
 
 .explanation {
-  border: 2px solid pink;
-  background-color: $white;
-  padding: 1em;
-  background-image: url(images/taco-01.svg);
-  background-repeat: no-repeat;
-  background-size: 180px;
-  background-position: top;
-  margin: 1em;
-
+  @include regions("taco-01.svg", 1.1em, 250, 6.8);
 }
 
 .participation {
-  border: 2px solid orange;
-  background-color: $white;
-  background-image: url(images/fajitas-01.svg);
-  background-repeat: no-repeat;
-  background-size: 170px;
-  background-position: top;
-  padding: 1em;
-  margin: 1em;
+  @include regions("fajitas-01.svg", 1.1em, 220, 4);
 }
 
 .benefits {
-  border: 2px solid black;
-  background-color: $white;
-  background-image: url(images/quesadilla-01.svg);
-  background-repeat: no-repeat;
-  background-size: 200px;
-  background-position: top;
-  padding: 1em;
-  margin: 1em;
+  @include regions("quesadilla-01.svg", 1.1em, 280, 5.5);
 }
-
-.requirements {
-  border: 2px solid purple;
-  background-color: $white;
-  background-image: url(images/rice-01.svg);
-  background-repeat: no-repeat;
-  background-size: 170px;
-  background-position: top;
-  padding: 1em;
-  margin: 1em;
-}
-
-//requirements is here instead of in its own partial because there wasn't one and I wasn't confident in creating one - Niki

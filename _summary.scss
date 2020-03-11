@@ -1,17 +1,30 @@
 .summary {
   padding: 1em;
   background-color: $yellow;
+  // @include borderline(2px);
 }
 
 .summary p {
   font-size: 16px;
   text-align: center;
-}
 
-.summary p:nth-child(2) {
-  font-size: 1.7rem;
+  &:nth-child(1) {
+    font-size: 1.2rem;
+  }
+  
+  &:nth-child(2) {
+    font-size: 1.2rem;
+    font-weight: 900;
+    a  {
+      color: $dark-teal;
+      // background: url(Images/AvocadoLogo.svg) center no-repeat;
+      // background-size: 50px;
+    }
+  }
 }
 
 @media screen and (min-width: $media-width) {
-
+  .summary  {
+    grid-column: 2 / 4;
+  }
 }
