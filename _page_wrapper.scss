@@ -1,7 +1,7 @@
 .page-wrapper {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: 1fr, 1fr, 1fr;
     border: 3px solid $yellow;
     margin: 2em;
     padding: 2em;

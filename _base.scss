@@ -10,9 +10,9 @@ html {
 body { 
   font: 75% $primary-font;
   line-height: 1.88889;
-  margin: 0;
+  margin: 60px 0px 0px 0px;
   padding: 0;
   color: $black; 
   background-color: $sand;
-  @include borderline(3px);
+  // @include borderline(3px);
 }
