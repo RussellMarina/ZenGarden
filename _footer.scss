@@ -13,14 +13,6 @@ footer {
     border-radius: 100%;
   }
 
-  &::before  {
-    content: "";
-    background: url(Images/cacti-01.svg) no-repeat;
-    background-size: 100px;
-    background-position-x: center;
-    background-position-y: top;
-  }
-
   a:link, footer a:visited { 
     min-width: 50px;
     min-height: 50px;
