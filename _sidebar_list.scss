@@ -1,13 +1,15 @@
-.sidebar ul {
- 
-	}
+// .sidebar ul {
+
+// }
+
 .sidebar li {
-        list-style-type: none;
-	}
-.sidebar li a:link {
-	color: $red;
-    
-	}
-.sidebar li a:visited {
-	color: $brown;
-	}
+  list-style-type: none;
+
+  a:link {
+    color: $dark-teal;
+  }
+
+  a:visited {
+    color: $brown;
+  }
+}

@@ -1,29 +1,4 @@
 .extra1 {
-//	background: transparent url(http://csszengarden.com/001/cr2.gif) top left no-repeat; 
-//	position: absolute; 
-//	top: 40px; 
-//	right: 0; 
-//	width: 148px; 
-//	height: 110px;
-}
-//Jay, I had this deleted in my code, but the url code might be useful to us (me)
-
-.extra2 {
-  content: "";
-  // background: url(Images/hamburger_menu.svg) top center no-repeat;
-  // background-size: 50px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 10px;
-  content: url(Images/hamburger_menu.svg);
-
-  &:active  {
-    background-color: red;
-  }
-}
-
-.extra3 {
   height: 100px;
   width: 100%;
   background: url(Images/cacti-01.svg) no-repeat;

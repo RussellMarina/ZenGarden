@@ -12,6 +12,7 @@
 
 @media screen and (min-width: 900px)  {
   .intro  {
-    min-width: 300px;
+    grid-column: 1 / 4;
+    // min-width: 300px;
   }
 }

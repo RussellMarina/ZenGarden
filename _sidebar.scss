@@ -11,7 +11,14 @@
 
   .zen-resources {
     @include borderline();
+    background-color: $teal;
+    color: $white;
+
+    & > li a:link  {
+      $color: $white;
+    }
   }
+
 }
 
 .sidebar .wrapper { 
