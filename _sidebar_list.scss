@@ -8,6 +8,19 @@
 	color: $red;
     
 	}
+
+.sidebar li a:hover {
+	color: $white;
+    
+	}
 .sidebar li a:visited {
 	color: $brown;
 	}
+
+.sidebar h3 {
+    color: $brown;
+//    font: $secondary-font;
+    font-weight: normal;
+    font-size: 1.3em;
+   
+}

@@ -8,25 +8,38 @@
 }
 //Jay, I had this deleted in my code, but the url code might be useful to us (me)
 
-.extra2 {
-  content: "";
-  // background: url(Images/hamburger_menu.svg) top center no-repeat;
-  // background-size: 50px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 10px;
-  content: url(Images/hamburger_menu.svg);
-
-  &:active  {
-    background-color: red;
-  }
-}
+//.extra2 {
+//  content: "";
+//  // background: url(Images/hamburger_menu.svg) top center no-repeat;
+//  // background-size: 50px;
+//  position: absolute;
+//  top: 0;
+//  right: 0;
+//  margin: 10px;
+//  content: url(Images/hamburger_menu.svg);
+//
+//  &:active  {
+//    background-color: red;
+//  }
+//}
 
 .extra3 {
-  height: 100px;
-  width: 100%;
-  background: url(Images/cacti-01.svg) no-repeat;
-  background-position-x: center;
-  background-position-y: top;
+    height: 235px;
+    width: 100%;
+    background: url(Images/cacti-01.svg);
+    background-position-x: center;
+    background-position-y: top;
+    background-size: 1000px;
+    position: relative;
+    z-index: 2;
+   
+    
+}
+
+.extra4 {
+        height: 25px;
+        width: 100%;
+        background-color: #b38155;
+    margin-top: -25px;
+    
 }

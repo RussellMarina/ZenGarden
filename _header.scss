@@ -4,29 +4,31 @@ header {
     background-size: 300px;
     background-position-x: center;
     background-position-y: top;
-    display: grid;
-    grid-template-rows: repeat($h-num, $h-row-height/$h-num);
+//    display: grid;
+//    grid-template-rows: repeat($h-num, $h-row-height/$h-num);
     text-align: center;
     align-items: center;
-    height: $h-row-height; // padding-top: 6em;
-    // @include borderline(2px);
+    height: 350px; // padding-top: 6em;
     padding-top: 15px;//adds a little more yellow above the sun
+    
     &::before {//this pseudo element adds a false element in the header section so that we can layer the mariachi over the sun. 
         background: url(images/Mariachi01.svg) center no-repeat;
         content: "";
         background-size: 117px;//have to set this when using pseudo element for an image
-        height: 250px;//set when using pseudo element for an image
-        margin-top: 147px;//this moves the mariachi up or down
+        height: 180px;//set when using pseudo element for an image
+//        margin-top: 147px;//this moves the mariachi up or down
         margin-left: 33px;//centers mariachi with title
         animation-name: mariachi;//gives the animation a name so that we can use keyframes
         animation-duration:1.75s;//speed of movement
         animation-iteration-count: infinite;//continually repeats the swaying
         animation-timing-function: linear;
+        display: block;
+        
     }
 
 
     h1 {
-        grid-row: 7 / 9;
+//        grid-row: 7 / 9;
         font: 2.6em $secondary-font;
         color: $dark-teal;
         line-height: 1em;
@@ -34,9 +36,9 @@ header {
 
     }
     h2 {
-        grid-row: 9 / 10;
+//        grid-row: 9 / 10;
         font-style: italic;
-        font-size: 1em;
+        font-size: 1.1em;
         text-transform: lowercase;
     }
 }
@@ -52,7 +54,7 @@ header {
 
 @media screen and (min-width: $media-width) {
     .intro {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+//        display: grid;
+//        grid-template-columns: 1fr;
     }
 }

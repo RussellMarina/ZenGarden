@@ -1,8 +1,11 @@
 .page-wrapper {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr, 1fr, 1fr;
-    border: 3px solid $yellow;
+    display: flex;
+    flex-direction: column;
+//    flex-wrap:wrap;
+    position: relative;
+//    grid-template-columns: 1fr;
+//    grid-template-rows: 1fr 1fr 1fr; can't have on mobile
+    border: 3px solid $red;
     margin: 2em;
     padding: 2em;
     min-width: 300px;
@@ -11,7 +14,10 @@
 
 @media screen and (min-width:$media-width) {
   .page-wrapper {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
+      flex-direction: row;     
+            
+    
+    //    display: grid;
+//    grid-template-columns: 1fr 1fr 1fr;
+}
 }

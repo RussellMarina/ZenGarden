@@ -15,18 +15,23 @@
     &:nth-child(2) {
         font-size: 1.2rem;
         font-weight: 900;
+        width: 260px;
         padding: 25px 0; 
+        
         a { //targets the a links for html file & css file
             color: $dark-teal;
             display: inline-block;//display inline-block to get html and css next to each other
              padding-top: 10px;
+    
 
             &::before {
-                content: "";
+                content: "\A";
                 background: url(Images/avocado-01.svg) center no-repeat;
                 display: block;//display block so avocados stack properly
                 height: 75px;//give pseudo element images a height
-                background-size: 85px;//give pseudo element images a background size
+                width: 56px;
+                background-size: 75px;//give pseudo element images a background size
+                white-space: pre-line;
                
             }
         }
@@ -35,6 +40,6 @@
 
 @media screen and (min-width: $media-width) {
     .summary {
-        grid-column: 2 / 4;
+//        grid-column: 2 / 4;
     }
 }
