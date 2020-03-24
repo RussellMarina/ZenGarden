@@ -3,6 +3,7 @@
 }
 
 .explanation {
+
     @include regions("taco-01.svg", 1.1em, 250, 6.8);
 }
 
@@ -19,8 +20,8 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-    
-        
+
+
         .explanation,
         .participation,
         .benefits,
@@ -29,6 +30,15 @@
 
         }
     }
+}
+.preamble{
+@include regions("tamales2.svg", 1.1em, 270, 5);
+}
 
+.participation {
+    @include regions("fajitaswdrink1.svg", 1.1em, 250, 6);
+}
 
+.benefits {
+    @include regions("quesadillas1_1.svg", 1.1em, 300, 4);
 }

@@ -1,26 +1,39 @@
-.sidebar ul {
- 
-	}
+// .sidebar ul {
+// }
 .sidebar li {
-        list-style-type: none;
-	}
+
+    list-style-type: none;
+}
+
 .sidebar li a:link {
-	color: $red;
-    
-	}
+    color: $red;
+
+}
 
 .sidebar li a:hover {
-	color: $white;
-    
-	}
+    color: $white;
+
+}
+
 .sidebar li a:visited {
-	color: $brown;
-	}
+    color: $brown;
+}
 
 .sidebar h3 {
     color: $brown;
-//    font: $secondary-font;
+    //    font-family: $secondary-font;
     font-weight: normal;
     font-size: 1.3em;
-   
+
 }
+
+
+a:link {
+    color: $dark-teal;
+}
+
+a:visited {
+    color: $brown;
+}
+
+
