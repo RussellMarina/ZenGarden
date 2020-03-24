@@ -2,16 +2,15 @@
   grid-row: 1 / 2;
   background-color: $sand;
   width: 100%;
-  //margin-top: 1em;
-  //@include borderline();
-
+  // margin-top: 1em;
+  // @include borderline();
 }
 
 .intro h1, h2 {
   text-align: center;
 }
 
-@media screen and (min-width: 900px)  {
+@media screen and (min-width: $media-width)  {
   .intro  {
     grid-column: 1 / 4;
     // min-width: 300px;

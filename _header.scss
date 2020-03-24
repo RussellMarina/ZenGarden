@@ -1,87 +1,59 @@
 header {
-    background: url(images/star.svg) center no-repeat;
+    background: url(Images/Star.svg) center no-repeat;
     background-color: $yellow;
-    background-size: 400px;
+    background-size: 300px;
     background-position-x: center;
-    background-position-y: top; //    display: grid;
-    //    grid-template-rows: repeat($h-num, $h-row-height/$h-num);
+    background-position-y: top;
+    // display: grid;
+    // grid-template-rows: repeat($h-num, $h-row-height/$h-num);
     text-align: center;
     align-items: center;
-    height: 350px; // padding-top: 6em;
-    padding-top: 15px; //adds a little more yellow above the sun
     height: $h-row-height; // padding-top: 6em;
-    // @include borderline(2px);
-    //padding-top: 15px;//adds a little more yellow above the sun
-    &::before {
-        //this pseudo element adds a false element in the header section so that we can layer the mariachi over the sun. 
-        background: url(images/Mariachi01.svg) center no-repeat;
+    padding-top: 15px;//adds a little more yellow above the sun
+    &::before {//this pseudo element adds a false element in the header section so that we can layer the mariachi over the sun. 
+        background: url(Images/Mariachi.svg) center no-repeat;
         content: "";
-        background-size: 117px; //have to set this when using pseudo element for an image
-        height: 180px; //set when using pseudo element for an image
-        //        margin-top: 147px;//this moves the mariachi up or down
-        margin-left: 33px; //centers mariachi with title
-        animation-name: mariachi; //gives the animation a name so that we can use keyframes
-        animation-duration: 1.75s; //speed of movement
-        animation-iteration-count: infinite; //continually repeats the swaying
+        background-size: 117px;//have to set this when using pseudo element for an image
+        height: 180px;//set when using pseudo element for an image
+        // margin-top: 147px;//this moves the mariachi up or down
+        margin-left: 33px;//centers mariachi with title
+        animation-name: mariachi;//gives the animation a name so that we can use keyframes
+        animation-duration:1.75s;//speed of movement
+        animation-iteration-count: infinite;//continually repeats the swaying
         animation-timing-function: linear;
         display: block;
-
     }
 
 
     h1 {
-
-        //        grid-row: 7 / 9;
+        // grid-row: 7 / 9;
         font: 2.6em $secondary-font;
-        grid-row: 6 / 7;
-        font: 3em $secondary-font;
         color: $dark-teal;
         line-height: 1em;
-        padding: 0px 0px;
+        padding: 0;
         margin: 0px 30px;
         text-transform: uppercase;
     }
 
     h2 {
-
-        //        grid-row: 9 / 10;
-        font-style: italic;
-        font-size: 1.1em;
-        grid-row: 7;
+        // grid-row: 9 / 10;
         font-style: normal;
         font-size: 1.2em;
         text-transform: lowercase;
         color: $dark-teal;
         line-height: 1.1em;
-
-
     }
+}
+
+@keyframes mariachi { //calls the value of "mariachi" and applies the animation as follows
+    0% {transform:rotate(0deg);}
+    25% {transform:rotate(-10deg);}
+    50% {transform:rotate(0deg);}
+    75% {transform:rotate(10deg);}
+    100% {transform:rotate(0deg);}
+}
 
 
-    @keyframes mariachi {
-        //calls the value of "mariachi" and applies the animation as follows
-        0% {
-            transform: rotate(0deg);
-        }
-        25% {
-            transform: rotate(-10deg);
-        }
-        50% {
-            transform: rotate(0deg);
-        }
-        75% {
-            transform: rotate(10deg);
-        }
-        100% {
-            transform: rotate(0deg);
-        }
-    }
+@media screen and (min-width: $media-width) {
 
-
-    @media screen and (min-width: $media-width) {
-        .intro {
-            //        display: grid;
-            //        grid-template-columns: 1fr;
-        }
-    }
 }

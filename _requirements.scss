@@ -1,5 +1,5 @@
 .requirements {
-  @include regions("rice-01.svg", 1.1em, 300, 4.5);
+  @include regions("Rice.svg", 1.1em, 300, 4.5);
 }
 
 p[role="contentinfo"] {
@@ -11,4 +11,8 @@ p[role="contentinfo"] {
   a:link, a:active, a:visited {
     color: $teal;
   }
+}
+
+@media screen and (min-width:$media-width) {
+
 }

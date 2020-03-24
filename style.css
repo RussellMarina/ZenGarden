@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Sigmar+One&display=swap");
 @font-face {
   font-family: "verdemoderna";
-  src: url("images/verdemoderna.woff") format("woff");
+  src: url("text/verdemonderna.woff") format("woff");
 }
 html {
   margin: 0;
@@ -13,11 +13,11 @@ html {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font: 100% "Montserrat", sans-serif;
   line-height: 1.88889;
   margin: 0;
   padding: 0;
-  color: #204B4B;
+  color: #204b4b;
   background-color: #f6e5a9;
 }
 body abbr[title] {
@@ -27,7 +27,6 @@ body abbr[title] {
 p {
   margin: 0;
   text-align: justify;
-  padding: 1.5em 1.5em 0em 1.5em;
 }
 
 h1, h2, h3, h4, h5 {
@@ -36,8 +35,8 @@ h1, h2, h3, h4, h5 {
 }
 
 h3 {
-  font: 2em "Sigmar One", cursive;
-  color: #389C9C;
+  font: bold 2em "Sigmar One", cursive;
+  color: #389c9c;
   font-weight: 100;
 }
 
@@ -50,12 +49,12 @@ a:link {
 a:visited {
   font-weight: bold;
   text-decoration: none;
-  color: #389C9C;
+  color: #389c9c;
 }
 
 a:hover, a:focus, a:active {
   text-decoration: none;
-  color: #389C9C;
+  color: #389c9c;
 }
 
 abbr {
@@ -69,21 +68,12 @@ abbr {
   border: 3px solid #ce2027;
   margin: 2em;
   padding: 2em;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr, 1fr, 1fr;
-  border: 3px solid #ce2027;
-  margin: 1.5em;
-  padding: 1.5em;
   min-width: 300px;
 }
 
 @media screen and (min-width: 900px) {
   .page-wrapper {
     flex-direction: row;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 2fr 2fr 1fr 1fr;
   }
 }
 .intro {
@@ -102,19 +92,18 @@ abbr {
   }
 }
 header {
-  background: url(images/star.svg) center no-repeat;
-  background-color: #FBD659;
-  background-size: 400px;
+  background: url(Images/Star.svg) center no-repeat;
+  background-color: #fbd659;
+  background-size: 300px;
   background-position-x: center;
   background-position-y: top;
   text-align: center;
   align-items: center;
   height: 350px;
   padding-top: 15px;
-  height: 400px;
 }
 header::before {
-  background: url(images/Mariachi01.svg) center no-repeat;
+  background: url(Images/Mariachi.svg) center no-repeat;
   content: "";
   background-size: 117px;
   height: 180px;
@@ -127,24 +116,20 @@ header::before {
 }
 header h1 {
   font: 2.6em "Sigmar One", cursive;
-  grid-row: 6/7;
-  font: 3em "Sigmar One", cursive;
-  color: #204B4B;
+  color: #204b4b;
   line-height: 1em;
-  padding: 0px 0px;
+  padding: 0;
   margin: 0px 30px;
   text-transform: uppercase;
 }
 header h2 {
-  font-style: italic;
-  font-size: 1.1em;
-  grid-row: 7;
   font-style: normal;
   font-size: 1.2em;
   text-transform: lowercase;
-  color: #204B4B;
+  color: #204b4b;
   line-height: 1.1em;
 }
+
 @keyframes mariachi {
   0% {
     transform: rotate(0deg);
@@ -164,34 +149,30 @@ header h2 {
 }
 .summary {
   padding: 1em;
-  background-color: #FBD659;
+  background-color: #fbd659;
 }
 
 .summary p {
-  font-size: 16px;
   text-align: center;
-  color: #204B4B;
 }
 .summary p:nth-child(1) {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-top: -15px;
   padding: 10px;
 }
 .summary p:nth-child(2) {
   font-size: 1.2rem;
   font-weight: 900;
-  width: 260px;
   padding: 25px 0;
-  padding: 20px 50px;
 }
 .summary p:nth-child(2) a {
-  color: #204B4B;
+  color: #204b4b;
   display: inline-block;
   padding-top: 10px;
 }
 .summary p:nth-child(2) a::before {
   content: "\a";
-  background: url(Images/avocado-01.svg) center no-repeat;
+  background: url(Images/Avocado.svg) center no-repeat;
   display: block;
   height: 75px;
   width: 56px;
@@ -202,7 +183,7 @@ header h2 {
 .preamble {
   padding: 1em;
   margin: 1em 0;
-  background: url(images/taco-01.svg) no-repeat;
+  background: url(images/Taco.svg) no-repeat;
   background-size: 310px;
   background-position-x: center;
   background-position-y: 7.5em;
@@ -220,10 +201,10 @@ header h2 {
 .explanation {
   padding: 1em;
   margin: 1em 0;
-  background: url(images/taco-01.svg) no-repeat;
-  background-size: 250px;
+  background: url(images/Tamales.svg) no-repeat;
+  background-size: 270px;
   background-position-x: center;
-  background-position-y: 6.8em;
+  background-position-y: 5em;
 }
 .explanation h3 {
   height: 11em;
@@ -238,10 +219,10 @@ header h2 {
 .participation {
   padding: 1em;
   margin: 1em 0;
-  background: url(images/fajitas-01.svg) no-repeat;
-  background-size: 220px;
+  background: url(images/Fajitaswdrink.svg) no-repeat;
+  background-size: 250px;
   background-position-x: center;
-  background-position-y: 4em;
+  background-position-y: 6em;
 }
 .participation h3 {
   height: 11em;
@@ -256,10 +237,10 @@ header h2 {
 .benefits {
   padding: 1em;
   margin: 1em 0;
-  background: url(images/quesadilla-01.svg) no-repeat;
-  background-size: 280px;
+  background: url(images/Quesadillas.svg) no-repeat;
+  background-size: 300px;
   background-position-x: center;
-  background-position-y: 5.5em;
+  background-position-y: 4em;
 }
 .benefits h3 {
   height: 11em;
@@ -284,64 +265,10 @@ header h2 {
     width: 50%;
   }
 }
-.preamble {
-  padding: 1em;
-  margin: 1em 0;
-  background: url(images/tamales2.svg) no-repeat;
-  background-size: 270px;
-  background-position-x: center;
-  background-position-y: 5em;
-}
-.preamble h3 {
-  height: 11em;
-  text-align: center;
-  line-height: 1.5em;
-}
-.preamble p {
-  padding-bottom: 10px;
-  font-size: 1.1em;
-}
-
-.participation {
-  padding: 1em;
-  margin: 1em 0;
-  background: url(images/fajitaswdrink1.svg) no-repeat;
-  background-size: 250px;
-  background-position-x: center;
-  background-position-y: 6em;
-}
-.participation h3 {
-  height: 11em;
-  text-align: center;
-  line-height: 1.5em;
-}
-.participation p {
-  padding-bottom: 10px;
-  font-size: 1.1em;
-}
-
-.benefits {
-  padding: 1em;
-  margin: 1em 0;
-  background: url(images/quesadillas1_1.svg) no-repeat;
-  background-size: 300px;
-  background-position-x: center;
-  background-position-y: 4em;
-}
-.benefits h3 {
-  height: 11em;
-  text-align: center;
-  line-height: 1.5em;
-}
-.benefits p {
-  padding-bottom: 10px;
-  font-size: 1.1em;
-}
-
 .requirements {
   padding: 1em;
   margin: 1em 0;
-  background: url(images/rice-01.svg) no-repeat;
+  background: url(images/Rice.svg) no-repeat;
   background-size: 300px;
   background-position-x: center;
   background-position-y: 4.5em;
@@ -359,29 +286,19 @@ header h2 {
 p[role=contentinfo] {
   background-color: #f6e5a9;
   text-decoration: none;
-  color: #389C9C;
+  color: #389c9c;
   font-size: 1.2rem;
   text-align: center;
 }
 p[role=contentinfo] a:link, p[role=contentinfo] a:active, p[role=contentinfo] a:visited {
-  color: #389C9C;
+  color: #389c9c;
 }
 
 footer {
   text-align: center;
   height: 50px;
-  /*a:link, footer a:visited { 
-    min-width: 50px;
-    min-height: 50px;
-    text-indent: -9999px;
-  }*/
 }
 footer a:link {
-  /*  padding: 25px;
-    margin: 2px;
-    line-height: 0;
-    font-size: 0;
-    border: 2px solid deeppink;*/
   display: none;
   color: black;
   border: solid 3px red;
@@ -389,8 +306,6 @@ footer a:link {
 footer a:before {
   display: block;
   position: absolute;
-  /*  top: 3px;
-    left: 0;*/
   overflow: hidden;
   font-size: 50px;
   text-indent: 0;
@@ -408,34 +323,31 @@ footer a:hover {
 footer a:hover .zen-validate-css:before {
   content: "#";
 }
-footer .zen-validate-html:before {
+footer a:hover .zen-validate-html:before {
   content: "5";
 }
-footer .zen-validate-css:before {
+footer a:hover .zen-validate-css:before {
   content: "3";
 }
-footer .zen-license:before {
+footer a:hover .zen-license:before {
   content: "c";
 }
-footer .zen-accessibility:before {
+footer a:hover .zen-accessibility:before {
   content: "a";
 }
-footer .zen-github:before {
+footer a:hover .zen-github:before {
   content: "g";
 }
 
 .sidebar li {
   list-style-type: none;
 }
-
 .sidebar li a:link {
   color: #ce2027;
 }
-
 .sidebar li a:hover {
   color: #ffffff;
 }
-
 .sidebar li a:visited {
   color: #6f5940;
 }
@@ -446,33 +358,17 @@ footer .zen-github:before {
   font-size: 1.3em;
 }
 
-a:link {
-  color: #204B4B;
-}
-
-a:visited {
-  color: #6f5940;
-}
-
 .sidebar {
   background-color: #c1db74;
   padding: 1em;
-  grid-row: 3/4;
-  background-color: #ffffff;
-  padding: 1em;
-  margin-top: 30px;
 }
-
-h3.resources {
-  font-size: 1.5em;
-  color: #ffffff;
-  font-weight: 100;
+.sidebar h3.resources {
+  line-height: 0;
+  font-size: 0;
 }
-
-.zen-resources {
-  background-color: #389C9C;
+.sidebar .zen-resources {
+  background-color: #389c9c;
   color: #ffffff;
-  text-align: center;
 }
 .sidebar .wrapper {
   margin-left: 0px;
@@ -495,10 +391,10 @@ h3.resources {
     width: 300px;
   }
 }
-.extra3 {
+.extra1 {
   height: 235px;
   width: 100%;
-  background: url(Images/cacti-01.svg);
+  background: url(Images/Cactus.svg);
   background-position-x: center;
   background-position-y: top;
   background-size: 1000px;
@@ -506,14 +402,14 @@ h3.resources {
   z-index: 2;
 }
 
-.extra4 {
+.extra2 {
   height: 25px;
   width: 100%;
   background-color: #b38155;
   margin-top: -25px;
   height: 100px;
   width: 100%;
-  background: url(Images/cacti-01.svg) no-repeat;
+  background: url(Images/Cactus.svg) no-repeat;
   background-position-x: center;
   background-position-y: top;
 }

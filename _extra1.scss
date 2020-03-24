@@ -1,27 +1,26 @@
-.extra1 {}
-
-
-.extra3 {
-    height: 235px;
-    width: 100%;
-    background: url(Images/cacti-01.svg);
-    background-position-x: center;
-    background-position-y: top;
-    background-size: 1000px;
-    position: relative;
-    z-index: 2;
-
-
+.extra1 {
+  height: 235px;
+  width: 100%;
+  background: url(Images/Cactus.svg);
+  background-position-x: center;
+  background-position-y: top;
+  background-size: 1000px;
+  position: relative;
+  z-index: 2;
 }
 
-.extra4 {
-    height: 25px;
-    width: 100%;
-    background-color: #b38155;
-    margin-top: -25px;
-    height: 100px;
-    width: 100%;
-    background: url(Images/cacti-01.svg) no-repeat;
-    background-position-x: center;
-    background-position-y: top;
+.extra2 {
+  height: 25px;
+  width: 100%;
+  background-color: $background-color;
+  margin-top: -25px;
+  height: 100px;
+  width: 100%;
+  background: url(Images/Cactus.svg) no-repeat;
+  background-position-x: center;
+  background-position-y: top;
+}
+
+@media screen and (min-width:$media-width) {
+
 }

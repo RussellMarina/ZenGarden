@@ -1,39 +1,29 @@
 // .sidebar ul {
+
 // }
+
 .sidebar li {
+  list-style-type: none;
 
-    list-style-type: none;
-}
-
-.sidebar li a:link {
+  a:link {
     color: $red;
+  }
 
-}
-
-.sidebar li a:hover {
+  a:hover {
     color: $white;
+  }
 
-}
-
-.sidebar li a:visited {
+  a:visited {
     color: $brown;
+  }
 }
 
 .sidebar h3 {
-    color: $brown;
-    //    font-family: $secondary-font;
-    font-weight: normal;
-    font-size: 1.3em;
-
+  color: $brown;
+  font-weight: normal;
+  font-size: 1.3em;
 }
 
+@media screen and (min-width:$media-width) {
 
-a:link {
-    color: $dark-teal;
 }
-
-a:visited {
-    color: $brown;
-}
-
-

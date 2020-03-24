@@ -1,6 +1,5 @@
 .preamble {
-	@include regions("taco-01.svg", 1.1em, 310, 7.5);
-	
+  @include regions("Taco.svg", 1.1em, 310, 7.5);
 }
 
 @media screen and (min-width: $media-width) {

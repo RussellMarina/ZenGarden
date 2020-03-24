@@ -1,28 +1,32 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Sigmar+One&display=swap');
-@font-face {
-    font-family: "verdemoderna";
-    src: url("images/verdemoderna.woff") format('woff');
+@font-face  {
+  font-family: "verdemoderna";
+  src: url("text/verdemonderna.woff") format("woff");
 }
+
 // Color Scheme
 
 $sand: #f6e5a9; 
-$yellow: #FBD659;
+$yellow: #fbd659;
 $gold: #fec348; 
 $lime: #c1db74; 
 $blue-green: #6cbc99; 
 $red: #ce2027; 
 $white: #ffffff; 
-$brown: #6f5940; 
+$brown: #6f5940;
+$background-color: #b38155;
 $black: #000000;
-$teal: #389C9C;
-$dark-teal: #204B4B;
+$teal: #389c9c;
+$dark-teal: #204b4b;
 
 // fonts
 $primary-font: 'Montserrat', sans-serif;
 $secondary-font: 'Sigmar One', cursive;
 
+$primary-font-size: 100%;
+
 $media-width: 900px;
-$h-row-height:400px;
+$h-row-height: 350px;
 $h-num: 10;
 
 @mixin borderline($pixels: 1px ) {

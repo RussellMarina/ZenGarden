@@ -1,44 +1,30 @@
 .supporting {
-    //  grid-row: 2 / 3;
+  // grid-row: 2 / 3;
 }
 
 .explanation {
-
-    @include regions("taco-01.svg", 1.1em, 250, 6.8);
+  @include regions("Tamales.svg", 1.1em, 270, 5);
 }
 
 .participation {
-    @include regions("fajitas-01.svg", 1.1em, 220, 4);
+  @include regions("Fajitaswdrink.svg", 1.1em, 250, 6);
 }
 
 .benefits {
-    @include regions("quesadilla-01.svg", 1.1em, 280, 5.5);
+  @include regions("Quesadillas.svg", 1.1em, 300, 4);
 }
 
 @media screen and (min-width:$media-width) {
-    .supporting {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+  .supporting {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 
-
-        .explanation,
-        .participation,
-        .benefits,
-        .requirements {
-            width: 50%;
-
-        }
+    .explanation,
+    .participation,
+    .benefits,
+    .requirements {
+      width: 50%;
     }
-}
-.preamble{
-@include regions("tamales2.svg", 1.1em, 270, 5);
-}
-
-.participation {
-    @include regions("fajitaswdrink1.svg", 1.1em, 250, 6);
-}
-
-.benefits {
-    @include regions("quesadillas1_1.svg", 1.1em, 300, 4);
+  }
 }
