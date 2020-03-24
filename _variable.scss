@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Sigmar+One&display=swap');
-
+@font-face {
+    font-family: "verdemoderna";
+    src: url("images/verdemoderna.woff") format('woff');
+}
 // Color Scheme
 
 $sand: #f6e5a9; 
@@ -19,7 +22,7 @@ $primary-font: 'Montserrat', sans-serif;
 $secondary-font: 'Sigmar One', cursive;
 
 $media-width: 900px;
-$h-row-height: 300px;
+$h-row-height:400px;
 $h-num: 10;
 
 @mixin borderline($pixels: 1px ) {

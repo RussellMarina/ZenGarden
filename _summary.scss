@@ -1,25 +1,30 @@
 .summary {
     padding: 1em;
     background-color: $yellow; // @include borderline(2px);
+	
 }
 
 .summary p {
     font-size: 16px;
     text-align: center;
-
-    &:nth-child(1) {
-        font-size: 1.2rem;
-
+	color:$dark-teal;
+	
+	&:nth-child(1) {
+        font-size: 1.5rem;
+		margin-top: -15px;
+		padding: 10px;
     }
 
     &:nth-child(2) {
         font-size: 1.2rem;
         font-weight: 900;
-        padding: 25px 0; 
+        padding: 20px 50px; 
+		
         a { //targets the a links for html file & css file
             color: $dark-teal;
             display: inline-block;//display inline-block to get html and css next to each other
              padding-top: 10px;
+			
 
             &::before {
                 content: "";

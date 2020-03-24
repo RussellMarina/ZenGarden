@@ -1,18 +1,26 @@
 .sidebar {
   grid-row: 3 / 4;
-  @include borderline(2px);
+ // @include borderline(2px);
   background-color: $white;
   padding: 1em;
+	margin-top:30px;
 
   h3.resources { 
-    line-height: 0;
-    font-size: 0;
+    //line-height: 0;
+    font-size: 1.5em;
+	  color:$white;
+	  font-weight: 100;
+	
   }
+	
 
   .zen-resources {
-    @include borderline();
-    background-color: $teal;
+    //@include borderline();
+	background-color: $teal;
     color: $white;
+	 text-align:center;
+	 
+
 
     & > li a:link  {
       $color: $white;
@@ -22,13 +30,18 @@
 }
 
 .sidebar .wrapper { 
-
+//text-align:center;
+	margin-left:0px;
 }
 
 .sidebar h3.select { 
-
+text-align:center;
+	font-weight: 100;
+	font-size: 1.5em;
 }
 
 .sidebar h3.archives { 
-
+text-align:center;
+	font-weight: 100;
+	font-size: 1.5em;
 }

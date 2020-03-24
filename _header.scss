@@ -1,7 +1,7 @@
 header {
     background: url(images/star.svg) center no-repeat;
     background-color: $yellow;
-    background-size: 300px;
+    background-size: 400px;
     background-position-x: center;
     background-position-y: top;
     display: grid;
@@ -10,7 +10,7 @@ header {
     align-items: center;
     height: $h-row-height; // padding-top: 6em;
     // @include borderline(2px);
-    padding-top: 15px;//adds a little more yellow above the sun
+    //padding-top: 15px;//adds a little more yellow above the sun
     &::before {//this pseudo element adds a false element in the header section so that we can layer the mariachi over the sun. 
         background: url(images/Mariachi01.svg) center no-repeat;
         content: "";
@@ -26,18 +26,25 @@ header {
 
 
     h1 {
-        grid-row: 7 / 9;
-        font: 2.6em $secondary-font;
+        grid-row: 6 / 7;
+        font: 3em $secondary-font;
         color: $dark-teal;
         line-height: 1em;
-        padding: 0px 15px;
+        padding: 0px 0px;
+		margin: 0px 30px;
+		text-transform: uppercase;
+		
 
     }
     h2 {
-        grid-row: 9 / 10;
-        font-style: italic;
-        font-size: 1em;
+        grid-row: 7;
+        font-style:normal;
+        font-size: 1.2em;
         text-transform: lowercase;
+		color: $dark-teal;
+		line-height: 1.1em;
+
+		
     }
 }
 

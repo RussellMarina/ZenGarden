@@ -3,13 +3,13 @@
 }
 
 .explanation {
-  @include regions("taco-01.svg", 1.1em, 250, 6.8);
+  @include regions("tamales2.svg", 1.1em, 270, 5);
 }
 
 .participation {
-  @include regions("fajitas-01.svg", 1.1em, 220, 4);
+  @include regions("fajitaswdrink1.svg", 1.1em, 250, 6);
 }
 
 .benefits {
-  @include regions("quesadilla-01.svg", 1.1em, 280, 5.5);
+  @include regions("quesadillas1_1.svg", 1.1em, 300, 4);
 }
