@@ -3,9 +3,14 @@ footer {
   height: 50px;
 
   a:link  {
-    display: none;
-    color:black;
-    border: solid 3px red;
+	padding: 25px;
+    margin: 2px;
+	
+    line-height: 0;
+    font-size: 0;
+    display: inline-block;
+    color:$dark-teal;
+   // border: solid 3px red;
   }
 
   a:before  {
@@ -20,15 +25,18 @@ footer {
     font-variant: normal;
     text-transform: none;
     line-height: 1;
+	  margin-top: -40px;
+	  margin-left:-20px;
     -webkit-font-smoothing: antialiased;
   }
 
   a:hover {
     color: $red;
 
-    .zen-validate-css:before  {
+    /*.zen-validate-css:before  {
       content:"#";
-    }
+	  }*/
+	}
     .zen-validate-html:before {
       content: "5";
     }
@@ -44,8 +52,8 @@ footer {
     .zen-github:before  {
       content:"g"
     }
-  }
 }
+
 
 @media screen and (min-width:$media-width) {
 
