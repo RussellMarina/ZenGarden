@@ -4,24 +4,29 @@
 
 .sidebar li {
   list-style-type: none;
-
+	margin-left: -30px;
+	font-size: 0.9em;
+	 text-align: center;
   a:link {
-    color: $red;
+    color: $white;
+	font-weight: 100;
+	 
   }
 
   a:hover {
-    color: $white;
+    color: $red;
   }
 
   a:visited {
-    color: $brown;
+    color: $dark-teal;
   }
 }
 
 .sidebar h3 {
-  color: $brown;
-  font-weight: normal;
-  font-size: 1.3em;
+  color: $dark-teal;
+  font-weight: 100;
+  font-size: 1em;
+text-align: center;
 }
 
 @media screen and (min-width:$media-width) {
