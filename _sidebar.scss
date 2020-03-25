@@ -9,10 +9,10 @@
   }
 
   .zen-resources {
-    background-color: $teal;
-    color: $white;
+   background-color: $teal; 
+    color: $teal;
 	  text-align: center;
-	  padding: 20px;
+	  padding: 10px;
 
     & > li a:link  {
       $color: $white;
@@ -28,8 +28,11 @@
 
 
 @media screen and (min-width:$media-width) {
-  .sidebar { 
+  .sidebar .wrapper { 
  width: 300px;
-	  height: 800px;
+//height: 800px;
   }
+	.sidebar{
+		height: 800px;
+	}
 }
