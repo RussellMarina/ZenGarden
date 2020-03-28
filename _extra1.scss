@@ -14,15 +14,16 @@ z-index: 2;
 
 @media screen and (min-width:$media-width) {
 	.extra2 {
- width: 100%; 
- height: 70vh;
-  background-color: $background-color;
-  margin-top: -100px;
-  background: url(Images/Cactus.svg) no-repeat;
+ width: 109%; 
+ height: 63vh;
+ // background-color: $background-color;
+  margin-top: -250px;
+  background: url(Images/cactibg.svg) no-repeat;
   background-position-x: center;
   background-position-y: bottom;
 position:absolute;
 z-index: 100;
+		//border: 1px solid red;
 
 		
 }
