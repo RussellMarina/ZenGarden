@@ -30,6 +30,7 @@ a:visited {
 a:hover, a:focus, a:active { 
   text-decoration: none; 
   color: $teal;
+cursor: url('Images/chip.svg'), auto;
 }
 
 abbr {
