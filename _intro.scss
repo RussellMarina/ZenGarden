@@ -1,9 +1,7 @@
 .intro {
-  grid-row: 1 / 2;
- // background-color: $sand;
+  background-color: $sand;
   width: 100%;
-  // margin-top: 1em;
-  // @include borderline();
+  @include borderline();
 }
 
 .intro h1, h2 {

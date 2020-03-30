@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Sigmar+One&display=swap");
 @font-face {
   font-family: "verdemoderna";
-  src: url("text/verdemonderna.woff") format("woff");
+  src: url(text/verdemoderna.woff) format("woff");
 }
 html {
   margin: 0;
@@ -19,6 +19,7 @@ body {
   padding: 0;
   color: #204b4b;
   background-color: #f6e5a9;
+  cursor: url("Images/chip1.svg"), auto;
 }
 body abbr[title] {
   text-decoration: none;
@@ -55,6 +56,7 @@ a:visited {
 a:hover, a:focus, a:active {
   text-decoration: none;
   color: #389c9c;
+  cursor: url("Images/chip.svg"), auto;
 }
 
 abbr {
@@ -65,7 +67,12 @@ abbr {
   display: flex;
   flex-direction: column;
   position: relative;
-  border: 3px solid #ce2027;
+  border: 10px solid;
+  border-image-source: url(Images/borderimage1.svg);
+  border-image-slice: 110;
+  border-image-width: 4;
+  border-image-outset: 1;
+  border-image-repeat: round;
   margin: 2em;
   padding: 2em;
   min-width: 300px;
@@ -74,12 +81,16 @@ abbr {
 @media screen and (min-width: 900px) {
   .page-wrapper {
     flex-direction: row;
+    border-image-slice: 500;
+    border-image-width: 6;
+    border-image-outset: 1;
+    padding: 3em;
   }
 }
 .intro {
-  grid-row: 1/2;
   background-color: #f6e5a9;
   width: 100%;
+  border: 1px solid deeppink;
 }
 
 .intro h1, h2 {
@@ -284,7 +295,6 @@ header h2 {
 }
 
 p[role=contentinfo] {
-  background-color: #f6e5a9;
   text-decoration: none;
   color: #389c9c;
   font-size: 1.2rem;
@@ -299,9 +309,12 @@ footer {
   height: 50px;
 }
 footer a:link {
-  display: none;
-  color: black;
-  border: solid 3px red;
+  padding: 25px;
+  margin: 2px;
+  line-height: 0;
+  font-size: 0;
+  display: inline-block;
+  color: #204b4b;
 }
 footer a:before {
   display: block;
@@ -315,47 +328,54 @@ footer a:before {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
+  margin-top: -40px;
+  margin-left: -20px;
   -webkit-font-smoothing: antialiased;
 }
 footer a:hover {
   color: #ce2027;
+  /*.zen-validate-css:before  {
+     content:"#";
+  }*/
 }
-footer a:hover .zen-validate-css:before {
-  content: "#";
-}
-footer a:hover .zen-validate-html:before {
+footer .zen-validate-html:before {
   content: "5";
 }
-footer a:hover .zen-validate-css:before {
+footer .zen-validate-css:before {
   content: "3";
 }
-footer a:hover .zen-license:before {
+footer .zen-license:before {
   content: "c";
 }
-footer a:hover .zen-accessibility:before {
+footer .zen-accessibility:before {
   content: "a";
 }
-footer a:hover .zen-github:before {
+footer .zen-github:before {
   content: "g";
 }
 
 .sidebar li {
   list-style-type: none;
+  margin-left: -30px;
+  font-size: 0.9em;
+  text-align: center;
 }
 .sidebar li a:link {
-  color: #ce2027;
+  color: #ffffff;
+  font-weight: 100;
 }
 .sidebar li a:hover {
-  color: #ffffff;
+  color: #ce2027;
 }
 .sidebar li a:visited {
-  color: #6f5940;
+  color: #204b4b;
 }
 
 .sidebar h3 {
-  color: #6f5940;
-  font-weight: normal;
-  font-size: 1.3em;
+  color: #204b4b;
+  font-weight: 100;
+  font-size: 1em;
+  text-align: center;
 }
 
 .sidebar {
@@ -368,50 +388,45 @@ footer a:hover .zen-github:before {
 }
 .sidebar .zen-resources {
   background-color: #389c9c;
-  color: #ffffff;
+  color: #389c9c;
+  text-align: center;
+  padding: 10px;
 }
 .sidebar .wrapper {
   margin-left: 0px;
-}
-
-.sidebar h3.select {
-  text-align: center;
-  font-weight: 100;
-  font-size: 1.5em;
-}
-
-.sidebar h3.archives {
-  text-align: center;
-  font-weight: 100;
-  font-size: 1.5em;
 }
 
 @media screen and (min-width: 900px) {
   .sidebar .wrapper {
     width: 300px;
   }
+
+  .sidebar {
+    height: 800px;
+  }
 }
-.extra1 {
-  height: 235px;
-  width: 100%;
-  background: url(Images/Cactus.svg);
+.extra2 {
+  height: 30vh;
+  width: 109%;
+  margin-top: -180px;
+  background: url(Images/cactibg.svg) no-repeat;
   background-position-x: center;
-  background-position-y: top;
-  background-size: 1000px;
-  position: relative;
+  background-position-y: bottom;
+  position: absolute;
   z-index: 2;
 }
 
-.extra2 {
-  height: 25px;
-  width: 100%;
-  background-color: #b38155;
-  margin-top: -25px;
-  height: 100px;
-  width: 100%;
-  background: url(Images/Cactus.svg) no-repeat;
-  background-position-x: center;
-  background-position-y: top;
+@media screen and (min-width: 900px) {
+  .extra2 {
+    width: 109%;
+    height: 63vh;
+    margin-top: -260px;
+    background: url(Images/cactibg.svg) no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+    position: absolute;
+    z-index: 100;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
