@@ -3,15 +3,15 @@
 }
 
 .explanation {
-  @include regions("Tamales.svg", 1.1em, 270, 5);
+  @include regions("Tamales.svg", 220, 5.5, 290, 5.5);
 }
 
 .participation {
-  @include regions("Fajitaswdrink.svg", 1.1em, 250, 6);
+  @include regions("Fajitaswdrink.svg", 200, 4.8, 260, 5.9);
 }
 
 .benefits {
-  @include regions("Quesadillas.svg", 1.1em, 300, 4);
+  @include regions("Quesadillas.svg", 220, 4.5, 320, 4.5);
 }
 
 @media screen and (min-width:$media-width) {

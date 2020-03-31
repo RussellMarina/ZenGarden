@@ -3,21 +3,19 @@ footer {
   height: 50px;
 
   a:link  {
-	padding: 25px;
+  	padding: 20px;
     margin: 2px;
-	
     line-height: 0;
     font-size: 0;
     display: inline-block;
     color:$dark-teal;
-   // border: solid 3px red;
   }
 
   a:before  {
     display: block;
     position: absolute;
     overflow: hidden;
-    font-size: 50px;
+    font-size: 40px;
     text-indent: 0;
     font-family: 'verdemoderna';
     speak: none;
@@ -32,29 +30,34 @@ footer {
 
   a:hover {
     color: $red;
-
-    /*.zen-validate-css:before  {
-      content:"#";
-	  }*/
 	}
-    .zen-validate-html:before {
-      content: "5";
-    }
-    .zen-validate-css:before  {
-      content:"3"
-    }
-    .zen-license:before {
-      content:"c"
-    }
-    .zen-accessibility:before {
-      content:"a"
-    }
-    .zen-github:before  {
-      content:"g"
-    }
+
+  .zen-validate-html:before {
+    content: "5";
+  }
+  .zen-validate-css:before  {
+    content:"3"
+  }
+  .zen-license:before {
+    content:"c"
+  }
+  .zen-accessibility:before {
+    content:"a"
+  }
+  .zen-github:before  {
+    content:"g"
+  }
 }
 
 
 @media screen and (min-width:$media-width) {
-
+  footer  {
+    a:link  {
+      padding: 40px;
+    }
+  
+    a:before  {
+      font-size: 70px;
+    }
+  }
 }

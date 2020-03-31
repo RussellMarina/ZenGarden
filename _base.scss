@@ -9,17 +9,19 @@ html {
 
 body { 
   font: $primary-font-size $primary-font;
-  line-height: 1.88889;
+  line-height: 1.6;
   margin: 0;
   padding: 0;
   color: $dark-teal; 
   background-color: $sand;
-  cursor: url('Images/chip1.svg'), auto;
   abbr[title] {
     text-decoration: none;
   }
 }
 
 @media screen and (min-width:$media-width) {
-
+  body  {
+    line-height: 1.88889;
+    cursor: url('Images/Chip1.svg'), auto;
+  }
 }

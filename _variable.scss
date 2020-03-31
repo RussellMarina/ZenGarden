@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Sigmar+One&display=swap');
 @font-face  {
   font-family: "verdemoderna";
-  src: url(text/verdemoderna.woff) format("woff");
+  src: url(Text/verdemoderna.woff) format("woff");
 }
 
 // Color Scheme
@@ -25,8 +25,13 @@ $secondary-font: 'Sigmar One', cursive;
 
 $primary-font-size: 100%;
 
+// Font sizes for Region mixin
+$region-h3-mobile: 1.5em;
+$region-h3-desktop: 1.9em;
+$region-p-mobile: 0.9em;
+$region-p-desktop: 1.2em;
+
 $media-width: 900px;
-$h-row-height: 350px;
 $h-num: 10;
 
 @mixin borderline($pixels: 1px ) {
@@ -67,22 +72,41 @@ $h-num: 10;
   border: $pixels solid $color;
 }
 
-@mixin regions($image, $font-size: 1em, $bg-size: 170, $bg-y: 5) {
+@mixin regions($image, $bg-m: 170, $bg-y-m: 5, $bg-d: 170, $bg-y-d: 5) {
   padding: 1em;
   margin: 1em 0;
-  background: url(images/#{$image}) no-repeat;
-  background-size: #{$bg-size}px;
+  background: url(Images/#{$image}) no-repeat;
+  background-size: #{$bg-m}px;
   background-position-x: center;
-  background-position-y: #{$bg-y}em;
+  background-position-y: #{$bg-y-m}em;
 
   h3  {
     height: 11em;
     text-align: center;
     line-height: 1.5em;
+    font-size: $region-h3-mobile;
   }
 
   p {
     padding-bottom: 10px;
-    font-size: $font-size; //  change to desired size
+    font-size: $region-p-mobile;
+
+  }
+
+  @media screen and (min-width: $media-width) {
+    background-size: #{$bg-d}px;
+    background-position-y: #{$bg-y-d}em;
+  
+    h3  {
+      height: 11em;
+      text-align: center;
+      line-height: 1.5em;
+      font-size: $region-h3-desktop;
+    }
+  
+    p {
+      padding-bottom: 10px;
+      font-size: $region-p-desktop;
+    }
   }
 }

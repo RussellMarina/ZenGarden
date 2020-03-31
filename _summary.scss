@@ -13,7 +13,7 @@
   }
 
   &:nth-child(2) {
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     font-weight: 900;
     padding: 25px 0; 
     a { //targets the a links for html file & css file
@@ -35,7 +35,16 @@
 }
 
 @media screen and (min-width: $media-width) {
-  .summary {
-    // grid-column: 2 / 4;
+  .summary p {
+  
+    &:nth-child(1) {
+      font-size: 1.4rem;
+      margin-top: -15px;
+      padding: 10px;
+    }
+
+    &:nth-child(2) {
+      font-size: 1.2rem;
+    }
   }
 }
