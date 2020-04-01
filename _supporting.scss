@@ -1,30 +1,38 @@
 .supporting {
-  // grid-row: 2 / 3;
+    // grid-row: 2 / 3;
 }
 
 .explanation {
-  @include regions("Tamales.svg", 220, 5.5, 290, 5.5);
+    @include regions("Tamales.svg", 220, 5.5, 290, 5.5);
 }
 
 .participation {
-  @include regions("Fajitaswdrink.svg", 200, 4.8, 260, 5.9);
+    @include regions("Fajitaswdrink.svg", 200, 4.8, 260, 5.9);
 }
 
 .benefits {
-  @include regions("Quesadillas.svg", 220, 4.5, 320, 4.5);
+    @include regions("Quesadillas.svg", 220, 4.5, 320, 4.5);
 }
 
-@media screen and (min-width:$media-width) {
-  .supporting {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-    .explanation,
-    .participation,
-    .benefits,
-    .requirements {
-      width: 50%;
+    @media screen and (min-width:$media-width) {
+        .supporting {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;            
+            margin-top: 20px;
+            
+            
+            .explanation,
+            .participation,
+            .benefits,
+            .requirements {
+                width: 42%; //sets width of columns on desktop
+                display: inline-block;
+            }
+            
+            .explanation, .benefits{
+                margin-right: 50px;
+            }
+        }
     }
-  }
-}
