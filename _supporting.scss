@@ -22,12 +22,12 @@
         flex-wrap: wrap;
         justify-content: center;
         .explanation {
-            width: 90%;
+            width: 77%;
             margin-top: -15px;
         }
 
         .requirements, .participation  {
-            width: 90%;
+            width: 77%;
             margin-top: -25px;
         }
 
@@ -36,8 +36,8 @@
             width: 17%; //sets width of columns on desktop
             display: inline-block;
             position: absolute;
-            right: 50px;
-            top: 792px;
+            right: 80px;
+            top: 920px;
         }
     }
 }
