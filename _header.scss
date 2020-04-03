@@ -9,60 +9,69 @@ header {
     height: 310px;
     padding-top: 15px;
 
+
     &::before {
-      background: url(Images/Mariachi.svg) center no-repeat;
-      content: "";
-      background-size: 117px;
-      height: 180px;
-      // margin-top: 147px; //this moves the mariachi up or down
-      margin-left: 33px; //centers mariachi with title
-      animation-name: mariachi;
-      animation-duration:1.75s; //speed of movement
-      animation-iteration-count: infinite;
-      animation-timing-function: linear;
-      display: block;
+        background: url(Images/Mariachi.svg) center no-repeat;
+        content: "";
+        background-size: 117px;
+        height: 180px; // margin-top: 147px; //this moves the mariachi up or down
+        margin-left: 33px; //centers mariachi with title
+        animation-name: mariachi;
+        animation-duration: 1.75s; //speed of movement
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        display: block;
     }
 
     h1 {
-      font: 2.1em $secondary-font;
-      color: $dark-teal;
-      line-height: 1em;
-      padding: 0;
-      margin: 0px 30px;
-      text-transform: uppercase;
+        font: 2.1em $secondary-font;
+        color: $dark-teal;
+        line-height: 1em;
+        padding: 0;
+        margin: 0px 30px;
+        text-transform: uppercase;
     }
 
     h2 {
-      // grid-row: 9 / 10;
-      font-style: normal;
-      font-size: 1.1em;
-      text-transform: lowercase;
-      color: $dark-teal;
-      // line-height: 1.1em;
+        font-style: normal;
+        font-size: 1.1em;
+        text-transform: lowercase;
+        color: $dark-teal;
+        padding-top: .5em;
     }
 }
 
 //calls the value of "mariachi" and applies the animation as follows
 @keyframes mariachi {
-  0% {transform:rotate(0deg);}
-  25% {transform:rotate(-10deg);}
-  50% {transform:rotate(0deg);}
-  75% {transform:rotate(10deg);}
-  100% {transform:rotate(0deg);}
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-10deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
 
 @media screen and (min-width: $media-width) {
-  header  {
-    height: 350px;
+    header {
+        height: 350px;
 
-    h1 {
-      font-size: 2.6em;
-    }
+        h1 {
+            font-size: 2.6em;
+        }
 
-    h2 {
-      font-size: 1.2em;
-      line-height: 1.1em;
+        h2 {
+            font-size: 1.2em;
+            line-height: 1.1em;
+        }
     }
-  }
 }

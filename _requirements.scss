@@ -1,18 +1,18 @@
 .requirements {
-  @include regions("Rice.svg", 240, 4.0, 310, 5);
+    @include regions("Rice.svg", 240, 4.0, 310, 5);
 }
 
 p[role="contentinfo"] {
-  //background-color: $sand;
-  text-decoration: none;
-  color: $teal;
-  font-size: 1.2rem;
-  text-align: center;
-  a:link, a:active, a:visited {
+    //background-color: $sand;
+    text-decoration: none;
     color: $teal;
-  }
+    font-size: 1.2rem;
+    text-align: center;
+    a:link,
+    a:active,
+    a:visited {
+        color: $teal;
+    }
 }
 
-@media screen and (min-width:$media-width) {
-
-}
+@media screen and (min-width:$media-width) {}

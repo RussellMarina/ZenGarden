@@ -1,37 +1,34 @@
 // .sidebar ul {
-
 // }
-
 .sidebar li {
-  list-style-type: none;
-	margin-left: -30px;
-	font-size: 0.9em;
-	 text-align: center;
-  a:link {
-    color: $white;
-	font-weight: 100;
-	 
-  }
+    list-style-type: none;
+    margin-left: -30px;
+    font-size: 0.9em;
+    text-align: center;
+    a:link {
+        color: $white;
+        font-weight: 100;
+        line-height: 1.8;
 
-  a:hover {
-    color: $red;
-  }
+    }
 
-  a:visited {
-    color: $dark-teal;
-  }
-	
+    a:hover {
+        color: $red;
+    }
+
+    a:visited {
+        color: $dark-teal;
+    }
+
 }
 
 .sidebar h3 {
-  color: $dark-teal;
-  font-weight: 100;
-  font-size: 1em;
-text-align: center;
+    color: $dark-teal;
+    font-weight: 100;
+    font-size: 1em;
+    text-align: center;
 }
 
 
 
-@media screen and (min-width:$media-width) {
-
-}
+@media screen and (min-width:$media-width) {}

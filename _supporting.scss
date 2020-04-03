@@ -11,28 +11,33 @@
 }
 
 .benefits {
-    @include regions("Quesadillas.svg", 220, 4.5, 320, 4.5);
+    @include regions("Quesadillas.svg", 200, 4.5, 300, 4.5);
+    position: static;
 }
 
-    @media screen and (min-width:$media-width) {
-        .supporting {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;            
-            margin-top: 20px;
-            
-            
-            .explanation,
-            .participation,
-            .benefits,
-            .requirements {
-                width: 42%; //sets width of columns on desktop
-                display: inline-block;
-            }
-            
-            .explanation, .benefits{
-                margin-right: 50px;
-            }
+@media screen and (min-width:$media-width) {
+    .supporting {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        .explanation {
+            width: 90%;
+            margin-top: -15px;
+        }
+
+        .requirements, .participation  {
+            width: 90%;
+            margin-top: -25px;
+        }
+
+        .benefits,
+            {
+            width: 17%; //sets width of columns on desktop
+            display: inline-block;
+            position: absolute;
+            right: 50px;
+            top: 792px;
         }
     }
+}

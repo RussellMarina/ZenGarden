@@ -1,18 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Sigmar+One&display=swap');
-@font-face  {
-  font-family: "verdemoderna";
-  src: url(Text/verdemoderna.woff) format("woff");
+@font-face {
+    font-family: "verdemoderna";
+    src: url(Text/verdemoderna.woff) format("woff");
 }
 
 // Color Scheme
-
-$sand: #f6e5a9; 
+$sand: #f6e5a9;
 $yellow: #fbd659;
-$gold: #fec348; 
-$lime: #c1db74; 
-$blue-green: #6cbc99; 
-$red: #ce2027; 
-$white: #ffffff; 
+$gold: #fec348;
+$lime: #c1db74;
+$blue-green: #6cbc99;
+$red: #ce2027;
+$white: #ffffff;
 $brown: #6f5940;
 $background-color: #b38155;
 $black: #000000;
@@ -20,8 +19,10 @@ $teal: #389c9c;
 $dark-teal: #204b4b;
 
 // fonts
-$primary-font: 'Montserrat', sans-serif;
-$secondary-font: 'Sigmar One', cursive;
+$primary-font: 'Montserrat',
+sans-serif;
+$secondary-font: 'Sigmar One',
+cursive;
 
 $primary-font-size: 100%;
 
@@ -34,79 +35,83 @@ $region-p-desktop: 1.2em;
 $media-width: 900px;
 $h-num: 10;
 
-@mixin borderline($pixels: 1px ) {
-  $rn: random(10);
-  $color: red;
-
-  @if $rn == 1  {
+@mixin borderline($pixels: 1px) {
+    $rn: random(10);
     $color: red;
-  }
-  @if $rn == 2  {
-    $color: darkmagenta;
-  }
-  @if $rn == 3  {
-    $color: navy;
-  }
-  @if $rn == 4  {
-    $color: brown;
-  }
-  @if $rn == 5  {
-    $color: darkred;
-  }
-  @if $rn == 6  {
-    $color: darkmagenta;
-  }
-  @if $rn == 7  {
-    $color: blue;
-  }
-  @if $rn == 8  {
-    $color: darkorange;
-  }
-  @if $rn == 9  {
-    $color: rebeccapurple;
-  }
-  @if $rn == 10  {
-    $color: deeppink;
-  }
 
-  border: $pixels solid $color;
+    @if $rn==1 {
+        $color: red;
+    }
+    @if $rn==2 {
+        $color: darkmagenta;
+    }
+    @if $rn==3 {
+        $color: navy;
+    }
+    @if $rn==4 {
+        $color: brown;
+    }
+    @if $rn==5 {
+        $color: darkred;
+    }
+    @if $rn==6 {
+        $color: darkmagenta;
+    }
+    @if $rn==7 {
+        $color: blue;
+    }
+    @if $rn==8 {
+        $color: darkorange;
+    }
+    @if $rn==9 {
+        $color: rebeccapurple;
+    }
+    @if $rn==10 {
+        $color: deeppink;
+    }
+
+    border: $pixels solid $color;
 }
 
-@mixin regions($image, $bg-m: 170, $bg-y-m: 5, $bg-d: 170, $bg-y-d: 5) {
-  padding: 1em;
-  margin: 1em 0;
-  background: url(Images/#{$image}) no-repeat;
-  background-size: #{$bg-m}px;
-  background-position-x: center;
-  background-position-y: #{$bg-y-m}em;
+@mixin regions($image,
+$bg-m: 170,
+$bg-y-m: 5,
+$bg-d: 170,
+$bg-y-d: 5) {
+    padding: 1em;
+    margin: 1em 0;
+    background: url(Images/#{$image}) no-repeat;
+    background-size: #{$bg-m}px;
+    background-position-x: center;
+    background-position-y: #{$bg-y-m}em;
 
-  h3  {
-    height: 11em;
-    text-align: center;
-    line-height: 1.5em;
-    font-size: $region-h3-mobile;
-  }
-
-  p {
-    padding-bottom: 10px;
-    font-size: $region-p-mobile;
-
-  }
-
-  @media screen and (min-width: $media-width) {
-    background-size: #{$bg-d}px;
-    background-position-y: #{$bg-y-d}em;
-  
-    h3  {
-      height: 11em;
-      text-align: center;
-      line-height: 1.5em;
-      font-size: $region-h3-desktop;
+    h3 {
+        height: 11em;
+        text-align: center;
+        line-height: 1.5em;
+        font-size: $region-h3-mobile;
     }
-  
+
     p {
-      padding-bottom: 10px;
-      font-size: $region-p-desktop;
+        padding-bottom: 10px;
+        font-size: $region-p-mobile;
+
     }
-  }
+
+    @media screen and (min-width: $media-width) {
+        background-size: #{$bg-d}px;
+        background-position-y: #{$bg-y-d}em;
+
+        h3 {
+            height: 11em;
+            text-align: center;
+            line-height: 1.5em;
+            font-size: $region-h3-desktop;
+        }
+
+        p {
+            padding-bottom: 10px;
+            font-size: $region-p-desktop;
+        }
+    }
 }

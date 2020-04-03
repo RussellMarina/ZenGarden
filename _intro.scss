@@ -1,16 +1,17 @@
 .intro {
-  background-color: $sand;
-  width: 100%;
-  // @include borderline();
+    background-color: $sand;
+    width: 100%; // @include borderline();
 }
 
-.intro h1, h2 {
-  text-align: center;
+.intro h1,
+h2 {
+    text-align: center;
 }
 
-@media screen and (min-width: $media-width)  {
-  .intro  {
-    grid-column: 1 / 4;
-    // min-width: 300px;
-  }
+@media screen and (min-width: $media-width) {
+    .intro {
+
+        //    grid-column: 1 / 4;
+        // min-width: 300px;
+    }
 }
