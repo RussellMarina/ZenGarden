@@ -1,36 +1,47 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Sigmar+One&display=swap");
 @font-face {
   font-family: "verdemoderna";
-  src: url(text/verdemoderna.woff) format("woff");
+  src: url(Text/verdemoderna.woff) format("woff");
 }
 html {
   margin: 0;
   padding: 0;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
 body {
   font: 100% "Montserrat", sans-serif;
-  line-height: 1.88889;
+  line-height: 1.5;
+  text-justify: none;
   margin: 0;
   padding: 0;
   color: #204b4b;
   background-color: #f6e5a9;
-  cursor: url("Images/chip1.svg"), auto;
 }
 body abbr[title] {
   text-decoration: none;
 }
 
+@media screen and (min-width: 900px) {
+  body {
+    cursor: url("Images/ChipD.svg"), auto;
+  }
+}
 p {
   margin: 0;
   text-align: justify;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   padding: 0;
   margin: 0;
 }
@@ -53,10 +64,12 @@ a:visited {
   color: #389c9c;
 }
 
-a:hover, a:focus, a:active {
+a:hover,
+a:focus,
+a:active {
   text-decoration: none;
   color: #389c9c;
-  cursor: url("Images/chip.svg"), auto;
+  cursor: url("Images/ChipwSD.svg"), auto;
 }
 
 abbr {
@@ -67,50 +80,46 @@ abbr {
   display: flex;
   flex-direction: column;
   position: relative;
-  border: 10px solid;
-  border-image-source: url(Images/borderimage1.svg);
-  border-image-slice: 110;
-  border-image-width: 4;
-  border-image-outset: 1;
-  border-image-repeat: round;
-  margin: 2em;
-  padding: 2em;
+  border-left: 3px solid #ce2027;
+  border-right: 3px solid #ce2027;
+  border-top: 3px solid #ce2027;
+  margin: 1em;
+  padding: 0.5em;
   min-width: 300px;
 }
 
 @media screen and (min-width: 900px) {
   .page-wrapper {
     flex-direction: row;
+    border: 10px solid;
+    border-image-source: url(Images/Borderimage1.svg);
+    border-image-repeat: round;
     border-image-slice: 500;
     border-image-width: 6;
     border-image-outset: 1;
-    padding: 3em;
+    padding: 5em;
+    margin: 2em;
   }
 }
 .intro {
   background-color: #f6e5a9;
   width: 100%;
-  border: 1px solid deeppink;
 }
 
-.intro h1, h2 {
+.intro h1,
+h2 {
   text-align: center;
 }
 
-@media screen and (min-width: 900px) {
-  .intro {
-    grid-column: 1/4;
-  }
-}
 header {
   background: url(Images/Star.svg) center no-repeat;
   background-color: #fbd659;
-  background-size: 300px;
+  background-size: 100%;
   background-position-x: center;
   background-position-y: top;
   text-align: center;
   align-items: center;
-  height: 350px;
+  height: 310px;
   padding-top: 15px;
 }
 header::before {
@@ -126,7 +135,7 @@ header::before {
   display: block;
 }
 header h1 {
-  font: 2.6em "Sigmar One", cursive;
+  font: 2.1em "Sigmar One", cursive;
   color: #204b4b;
   line-height: 1em;
   padding: 0;
@@ -135,10 +144,10 @@ header h1 {
 }
 header h2 {
   font-style: normal;
-  font-size: 1.2em;
+  font-size: 1.1em;
   text-transform: lowercase;
   color: #204b4b;
-  line-height: 1.1em;
+  padding-top: 0.5em;
 }
 
 @keyframes mariachi {
@@ -158,23 +167,37 @@ header h2 {
     transform: rotate(0deg);
   }
 }
+@media screen and (min-width: 900px) {
+  header {
+    height: 500px;
+    width: 450px;
+  }
+  header h1 {
+    font-size: 2.6em;
+  }
+  header h2 {
+    font-size: 1.2em;
+    line-height: 1.1em;
+  }
+}
 .summary {
   padding: 1em;
   background-color: #fbd659;
 }
 
 .summary p {
+  font-size: 16px;
   text-align: center;
 }
 .summary p:nth-child(1) {
   font-size: 1.2rem;
-  margin-top: -15px;
-  padding: 10px;
 }
 .summary p:nth-child(2) {
   font-size: 1.2rem;
   font-weight: 900;
+  width: 260px;
   padding: 25px 0;
+  margin: 0 auto;
 }
 .summary p:nth-child(2) a {
   color: #204b4b;
@@ -194,73 +217,142 @@ header h2 {
 .preamble {
   padding: 1em;
   margin: 1em 0;
-  background: url(images/Taco.svg) no-repeat;
-  background-size: 310px;
+  background: url(Images/Taco.svg) no-repeat;
+  background-size: 250px;
   background-position-x: center;
-  background-position-y: 7.5em;
+  background-position-y: 6.5em;
 }
 .preamble h3 {
   height: 11em;
   text-align: center;
   line-height: 1.5em;
+  font-size: 1.5em;
 }
 .preamble p {
   padding-bottom: 10px;
-  font-size: 1.1em;
+  font-size: 0.9em;
+}
+@media screen and (min-width: 900px) {
+  .preamble {
+    background-size: 310px;
+    background-position-y: 8em;
+  }
+  .preamble h3 {
+    height: 11em;
+    text-align: center;
+    line-height: 1.5em;
+    font-size: 1.9em;
+  }
+  .preamble p {
+    padding-bottom: 10px;
+    font-size: 1.2em;
+  }
 }
 
 .explanation {
   padding: 1em;
   margin: 1em 0;
-  background: url(images/Tamales.svg) no-repeat;
-  background-size: 270px;
+  background: url(Images/Tamales.svg) no-repeat;
+  background-size: 220px;
   background-position-x: center;
-  background-position-y: 5em;
+  background-position-y: 5.5em;
 }
 .explanation h3 {
   height: 11em;
   text-align: center;
   line-height: 1.5em;
+  font-size: 1.5em;
 }
 .explanation p {
   padding-bottom: 10px;
-  font-size: 1.1em;
+  font-size: 0.9em;
+}
+@media screen and (min-width: 900px) {
+  .explanation {
+    background-size: 290px;
+    background-position-y: 5.5em;
+  }
+  .explanation h3 {
+    height: 11em;
+    text-align: center;
+    line-height: 1.5em;
+    font-size: 1.9em;
+  }
+  .explanation p {
+    padding-bottom: 10px;
+    font-size: 1.2em;
+  }
 }
 
 .participation {
   padding: 1em;
   margin: 1em 0;
-  background: url(images/Fajitaswdrink.svg) no-repeat;
-  background-size: 250px;
+  background: url(Images/Fajitaswdrink.svg) no-repeat;
+  background-size: 200px;
   background-position-x: center;
-  background-position-y: 6em;
+  background-position-y: 4.8em;
 }
 .participation h3 {
   height: 11em;
   text-align: center;
   line-height: 1.5em;
+  font-size: 1.5em;
 }
 .participation p {
   padding-bottom: 10px;
-  font-size: 1.1em;
+  font-size: 0.9em;
+}
+@media screen and (min-width: 900px) {
+  .participation {
+    background-size: 260px;
+    background-position-y: 5.9em;
+  }
+  .participation h3 {
+    height: 11em;
+    text-align: center;
+    line-height: 1.5em;
+    font-size: 1.9em;
+  }
+  .participation p {
+    padding-bottom: 10px;
+    font-size: 1.2em;
+  }
 }
 
 .benefits {
   padding: 1em;
   margin: 1em 0;
-  background: url(images/Quesadillas.svg) no-repeat;
-  background-size: 300px;
+  background: url(Images/Quesadillas.svg) no-repeat;
+  background-size: 200px;
   background-position-x: center;
-  background-position-y: 4em;
+  background-position-y: 4.5em;
+  position: static;
 }
 .benefits h3 {
   height: 11em;
   text-align: center;
   line-height: 1.5em;
+  font-size: 1.5em;
 }
 .benefits p {
   padding-bottom: 10px;
-  font-size: 1.1em;
+  font-size: 0.9em;
+}
+@media screen and (min-width: 900px) {
+  .benefits {
+    background-size: 300px;
+    background-position-y: 4.5em;
+  }
+  .benefits h3 {
+    height: 11em;
+    text-align: center;
+    line-height: 1.5em;
+    font-size: 1.9em;
+  }
+  .benefits p {
+    padding-bottom: 10px;
+    font-size: 1.2em;
+  }
 }
 
 @media screen and (min-width: 900px) {
@@ -268,30 +360,57 @@ header h2 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
   }
-  .supporting .explanation,
-.supporting .participation,
-.supporting .benefits,
-.supporting .requirements {
-    width: 50%;
+  .supporting .explanation {
+    width: 77%;
+    margin-top: -15px;
+  }
+  .supporting .requirements, .supporting .participation {
+    width: 77%;
+    margin-top: -25px;
+  }
+  .supporting .benefits {
+    width: 17%;
+    display: inline-block;
+    position: absolute;
+    right: 80px;
+    top: 920px;
   }
 }
 .requirements {
   padding: 1em;
   margin: 1em 0;
-  background: url(images/Rice.svg) no-repeat;
-  background-size: 300px;
+  background: url(Images/Rice.svg) no-repeat;
+  background-size: 240px;
   background-position-x: center;
-  background-position-y: 4.5em;
+  background-position-y: 4em;
 }
 .requirements h3 {
   height: 11em;
   text-align: center;
   line-height: 1.5em;
+  font-size: 1.5em;
 }
 .requirements p {
   padding-bottom: 10px;
-  font-size: 1.1em;
+  font-size: 0.9em;
+}
+@media screen and (min-width: 900px) {
+  .requirements {
+    background-size: 310px;
+    background-position-y: 5em;
+  }
+  .requirements h3 {
+    height: 11em;
+    text-align: center;
+    line-height: 1.5em;
+    font-size: 1.9em;
+  }
+  .requirements p {
+    padding-bottom: 10px;
+    font-size: 1.2em;
+  }
 }
 
 p[role=contentinfo] {
@@ -300,7 +419,9 @@ p[role=contentinfo] {
   font-size: 1.2rem;
   text-align: center;
 }
-p[role=contentinfo] a:link, p[role=contentinfo] a:active, p[role=contentinfo] a:visited {
+p[role=contentinfo] a:link,
+p[role=contentinfo] a:active,
+p[role=contentinfo] a:visited {
   color: #389c9c;
 }
 
@@ -309,7 +430,7 @@ footer {
   height: 50px;
 }
 footer a:link {
-  padding: 25px;
+  padding: 20px;
   margin: 2px;
   line-height: 0;
   font-size: 0;
@@ -320,7 +441,7 @@ footer a:before {
   display: block;
   position: absolute;
   overflow: hidden;
-  font-size: 50px;
+  font-size: 40px;
   text-indent: 0;
   font-family: "verdemoderna";
   speak: none;
@@ -334,9 +455,6 @@ footer a:before {
 }
 footer a:hover {
   color: #ce2027;
-  /*.zen-validate-css:before  {
-     content:"#";
-  }*/
 }
 footer .zen-validate-html:before {
   content: "5";
@@ -354,6 +472,14 @@ footer .zen-github:before {
   content: "g";
 }
 
+@media screen and (min-width: 900px) {
+  footer a:link {
+    padding: 40px;
+  }
+  footer a:before {
+    font-size: 70px;
+  }
+}
 .sidebar li {
   list-style-type: none;
   margin-left: -30px;
@@ -363,6 +489,7 @@ footer .zen-github:before {
 .sidebar li a:link {
   color: #ffffff;
   font-weight: 100;
+  line-height: 1.8;
 }
 .sidebar li a:hover {
   color: #ce2027;
@@ -398,18 +525,18 @@ footer .zen-github:before {
 
 @media screen and (min-width: 900px) {
   .sidebar .wrapper {
-    width: 300px;
+    width: 280px;
   }
 
   .sidebar {
-    height: 800px;
+    height: 838px;
   }
 }
 .extra2 {
   height: 30vh;
-  width: 109%;
+  width: 100%;
   margin-top: -180px;
-  background: url(Images/cactibg.svg) no-repeat;
+  background: url(Images/Cactibg.svg) no-repeat;
   background-position-x: center;
   background-position-y: bottom;
   position: absolute;
@@ -418,14 +545,14 @@ footer .zen-github:before {
 
 @media screen and (min-width: 900px) {
   .extra2 {
-    width: 109%;
+    width: 100%;
     height: 63vh;
-    margin-top: -260px;
-    background: url(Images/cactibg.svg) no-repeat;
+    margin-top: -200px;
+    background: url(Images/Cactibg.svg) no-repeat;
     background-position-x: center;
     background-position-y: bottom;
     position: absolute;
-    z-index: 100;
+    z-index: -1;
   }
 }
 
